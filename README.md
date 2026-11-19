@@ -10,10 +10,11 @@ Install it on Hauch's page "Plugins" with `axiomata-labs/hauch-wortfilter`, or:
 hauch plugins install axiomata-labs/hauch-wortfilter
 ```
 
-Its page there lists the replacements and adds new ones. It asks for one right, `storage`: a folder of its own for the
+Its page lists the replacements and adds new ones; since 0.2.0 it has an entry of its own in Hauch's navigation
+(the place `sidebar`, which the user may take back). It asks for one right, `storage`: a folder of its own for the
 list.
 
 Built from [axiomata-plugin-template](https://github.com/axiomata-labs/axiomata-plugin-template) in Rust:
-`scripts/release.sh 0.1.0` builds `dist/`, a tag `v0.1.0` publishes a release.
+`scripts/release.sh 0.2.0` builds `dist/`, a tag `v0.2.0` publishes a release.
 
 Licensed under either of [Apache License, Version 2.0](LICENSE-APACHE) or [MIT license](LICENSE-MIT) at your option.
