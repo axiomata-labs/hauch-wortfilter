@@ -1,0 +1,21 @@
+[package]
+name = "hauch-wortfilter"
+version = "0.1.0"
+edition = "2024"
+license = "MIT OR Apache-2.0"
+description = "A plugin for Hauch: your own replacements for words its recogniser gets wrong."
+repository = "https://github.com/axiomata-labs/hauch-wortfilter"
+publish = false
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wit-bindgen = { version = "=0.63.0", default-features = false, features = ["macros", "realloc"] }
+
+[profile.release]
+opt-level = "s"
+lto = true
+strip = true
+codegen-units = 1
+panic = "abort"

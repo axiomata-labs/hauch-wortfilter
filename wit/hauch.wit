@@ -1,0 +1,17 @@
+/// Hauch's plugins: the shared base of every Axiomata app's plugins (`axiomata:plugin`, in the Foundation's
+/// `crates/axiomata-plugin/wit/`) and the hooks Hauch calls. A plugin answers only the hooks its manifest's
+/// `provides` names; the others it exports are never called.
+package hauch:plugin@0.1.0;
+
+interface hooks {
+    /// Text Hauch recognised from speech, before it shows it or hands it on (the workshop's transcript,
+    /// `hauch transcribe`, `hauch dictate`); `language` is the tag it was recognised in (`de`), if known. Returns the
+    /// text changed, or none to leave it as it is. Several plugins answer one after the other, in the order of their
+    /// ids.
+    filter-recognised: func(text: string, language: option<string>) -> option<string>;
+}
+
+world plugin {
+    include axiomata:plugin/base@0.1.0;
+    export hooks;
+}

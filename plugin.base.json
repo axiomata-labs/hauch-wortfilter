@@ -1,0 +1,10 @@
+{
+  "id": "wortfilter",
+  "name": "Wortfilter",
+  "app": "hauch",
+  "interface": "0.1.0",
+  "description": "Deine eigenen Ersetzungen für Wörter, die Hauch falsch versteht – etwa „Lirfel“ statt „Lirvel“. Your own replacements for words Hauch mishears.",
+  "author": "Axiomata",
+  "rights": ["storage"],
+  "provides": ["filter-recognised"]
+}
