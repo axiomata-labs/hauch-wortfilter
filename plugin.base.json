@@ -3,7 +3,11 @@
   "name": "Wortfilter",
   "app": "hauch",
   "interface": "0.1.0",
-  "description": "Deine eigenen Ersetzungen für Wörter, die Hauch falsch versteht – etwa „Lirfel“ statt „Lirvel“. Your own replacements for words Hauch mishears.",
+  "description": "Your own replacements for words Hauch mishears – say “Lirfel” for “Lirvel”.",
+  "descriptions": {
+    "de": "Deine eigenen Ersetzungen für Wörter, die Hauch falsch versteht – etwa „Lirfel“ statt „Lirvel“.",
+    "en": "Your own replacements for words Hauch mishears – say “Lirfel” for “Lirvel”."
+  },
   "author": "Axiomata",
   "rights": ["storage"],
   "provides": ["filter-recognised"],
